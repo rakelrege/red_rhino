@@ -23,7 +23,6 @@ cor_penguins <- cor( x = best_penguins$body_mass_g,
        y = best_penguins$flipper_length_mm, 
        use = "pairwise.complete" 
     ) 
-
 error = 4 * 2 + 6
 print (error)
 ```
