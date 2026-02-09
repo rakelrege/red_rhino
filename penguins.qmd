@@ -24,7 +24,3 @@ cor_penguins <- cor( x = best_penguins$body_mass_g,
        use = "pairwise.complete" 
     ) 
 ```
-
-```{r}
-model1 <- lm(species ~ body_mass_g, data = best_penguins)
-```
