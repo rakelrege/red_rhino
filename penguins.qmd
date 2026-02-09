@@ -1,0 +1,26 @@
+---
+title: "work in progress"
+format: html
+editor: visual
+---
+
+## penguins
+
+```{r}
+library(palmerpenguins)
+library(ggplot2)
+library(tidyverse)
+
+penguins
+
+# select wanted data
+best_penguins <- penguins[, c("species", "body_mass_g", "flipper_length_mm")] |>
+  filter(species == "Chinstrap") |>
+drop_na()
+
+# correlation between sex and bodymass
+cor_penguins <- cor( x = best_penguins$body_mass_g, 
+       y = best_penguins$flipper_length_mm, 
+       use = "pairwise.complete" 
+    ) 
+```
