@@ -26,3 +26,7 @@ cor_penguins <- cor( x = best_penguins$body_mass_g,
 error = 4 * 2 + 6
 print (error)
 ```
+
+```{r}
+model1 <- lm(species ~ body_mass_g, data = best_penguins)
+```
